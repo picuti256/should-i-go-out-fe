@@ -40,10 +40,7 @@ export function PlaceholdersAndVanishInputDemo() {
   };
 
   return (
-    <div className="h-32 flex flex-col justify-center items-center px-4">
-      <h2 className="text-xl text-center sm:text-5xl dark:text-white text-black pb-4">
-        Tell me, what city do you live?
-      </h2>
+    <div className="h-36 flex flex-col justify-center items-center px-4 mt-5">
       <PlaceholdersAndVanishInput
         placeholders={placeholders}
         onChange={handleChange}

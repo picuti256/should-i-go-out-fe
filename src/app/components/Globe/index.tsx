@@ -396,7 +396,7 @@ export function GlobeDemo() {
 
   return (
     <div className="flex flex-row items-center justify-center h-screen md:h-auto dark:bg-black relative w-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+      <div className="mx-auto w-full relative overflow-hidden h-full md:h-[40rem] ">
         <motion.div
           initial={{
             opacity: 0,
@@ -414,13 +414,12 @@ export function GlobeDemo() {
           <h2 className="text-center text-xl md:text-4xl font-bold text-slate-700 dark:text-white">
             Should i go out?
           </h2>
-          <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            Know if where you live is having a good time to go out and having
-            fun!
+          <p className="text-center text-base md:text-lg font-normal text-neutral-300 dark:text-neutral-200 max-w-md mt-2 mx-auto">
+          Know if the weather where you live is good for going out and having fun!
           </p>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black z-40" />
-        <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
+        <div className="absolute w-full -bottom-20 h-72 md:h-full z-10 pb-8">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
